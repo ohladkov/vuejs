@@ -14,12 +14,10 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "./**/*.{vue,js,css,scss}": [
-        "prettier --write",
-        "git add"
-      ]
-    }
+    "./**/*.{vue,js,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "core-js": "^3.6.5",
