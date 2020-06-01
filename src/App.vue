@@ -1,16 +1,31 @@
 <template>
-  <div id="app">
+  <the-layout>
     Vue JS mounted successfully
-  </div>
+  </the-layout>
 </template>
 
 <script>
+import TheLayout from './layout/Default.vue';
 
 export default {
-  name: 'App',
+  components: {
+    TheLayout,
+  },
 };
 </script>
 
 <style lang="scss">
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
 </style>
