@@ -28,4 +28,8 @@ html {
 body {
   margin: 0;
 }
+
+img {
+  max-width: 100%;
+}
 </style>

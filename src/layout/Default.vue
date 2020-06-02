@@ -1,12 +1,12 @@
 <template>
   <div id="app" class="page">
-    <the-header class="page-header" />
+    <the-header />
 
     <main class="page-main">
       <slot />
     </main>
 
-    <the-footer class="page-footer" />
+    <the-footer />
   </div>
 </template>
 
@@ -27,14 +27,6 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  &-header,
-  &-footer {
-    padding: 1.5rem 3rem;
-    text-align: center;
-    text-transform: capitalize;
-    background-color: lightblue;
-  }
 
   &-main {
     display: flex;
