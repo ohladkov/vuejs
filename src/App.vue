@@ -1,15 +1,17 @@
 <template>
-  <the-layout>
-    Vue JS mounted successfully
-  </the-layout>
+  <layout>
+    <home />
+  </layout>
 </template>
 
 <script>
-import TheLayout from './layout/Default.vue';
+import Home from './views/Home.vue';
+import Layout from './layout/Default.vue';
 
 export default {
   components: {
-    TheLayout,
+    Layout,
+    Home,
   },
 };
 </script>

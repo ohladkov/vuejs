@@ -30,8 +30,7 @@ export default {
 
   &-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     flex-grow: 1;
     padding: 1.5rem 3rem;
     background-color: #f8f8f8;
