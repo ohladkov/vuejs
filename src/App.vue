@@ -1,17 +1,15 @@
 <template>
   <layout>
-    <home />
+    <router-view />
   </layout>
 </template>
 
 <script>
-import Home from './views/Home.vue';
-import Layout from './layout/Default.vue';
+import Layout from '@/layout/Default.vue';
 
 export default {
   components: {
     Layout,
-    Home,
   },
 };
 </script>

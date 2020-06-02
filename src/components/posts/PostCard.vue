@@ -1,14 +1,14 @@
 <template>
   <article class="post">
     <h2 class="post__title">
-      <a href="#">
-        {{ title }}
-      </a>
+      <router-link :to="{ name: 'post', params: { id: post.id } }">
+        {{ post.title }}
+      </router-link>
     </h2>
 
     <div class="post__description">
       <p>
-        {{ description }}
+        {{ post.body }}
       </p>
     </div>
   </article>
@@ -17,13 +17,9 @@
 <script>
 export default {
   props: {
-    title: {
+    post: {
       required: true,
-      type: String,
-    },
-    description: {
-      required: true,
-      type: String,
+      type: Object,
     },
   },
 };

@@ -1,12 +1,16 @@
 <template>
   <header class="page-header">
-    <a href="/" class="logo">
+    <router-link :to="{ name: 'home' }" class="logo">
       <img src="@/assets/logo.png" alt="Logo" />
-    </a>
+    </router-link>
 
     <nav class="page-nav">
-      <a href="#" class="page-nav__item">Posts</a>
-      <a href="#" class="page-nav__item">Register</a>
+      <router-link :to="{ name: 'posts' }" class="page-nav__item">
+        Posts
+      </router-link>
+      <router-link :to="{ name: 'register' }" class="page-nav__item">
+        Register
+      </router-link>
     </nav>
   </header>
 </template>
