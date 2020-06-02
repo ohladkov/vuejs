@@ -27,6 +27,10 @@
     margin: 0 0.5rem;
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
